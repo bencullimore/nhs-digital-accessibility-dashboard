@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  NHS.UK prototype kit
+NHS Digital Accessibility Dashboard
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -29,23 +29,64 @@
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
   <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
+    <div class="nhsuk-grid-column-full">
 
       <!-- Change the page title here -->
       <h1>
-        NHS Digital Accessibility Dashboard
+        Accessibility Compliance Data
         <!--<span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>-->
       </h1>
 
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+    <p>NHS services and platforms must be accessible to everyone who needs it. If it is not, you may be breaking the law.</p>
+  </div>
+</div>
 
-
-      
-
+    <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-4">
+      <li class="nhsuk-grid-column-one-quarter nhsuk-card-group__item">
+    
+        <div class="nhsuk-card nhsuk-card--clickable">
+          <div class="nhsuk-card__content">
+            <p class="nhsuk-heading-xl nhsuk-u-font-size-64 nhsuk-u-margin-bottom-1">8<span class="nhsuk-u-visually-hidden">services/platforms</span></p>priority platform/services
+          </div>
+        </div>
+    
+      </li>
+      <li class="nhsuk-grid-column-one-quarter nhsuk-card-group__item">
+    
+        <div class="nhsuk-card nhsuk-card--clickable">
+          <div class="nhsuk-card__content">
+            <p class="nhsuk-heading-xl nhsuk-u-font-size-64 nhsuk-u-margin-bottom-1">0<span class="nhsuk-u-visually-hidden">WCAG 2.1 compliance</span></p>WCAG 2.1 compliant
+          </div>
+        </div>
+    
+      </li>
+      <li class="nhsuk-grid-column-one-quarter nhsuk-card-group__item">
+    
+        <div class="nhsuk-card nhsuk-card--clickable">
+          <div class="nhsuk-card__content">
+            <p class="nhsuk-heading-xl nhsuk-u-font-size-64 nhsuk-u-margin-bottom-1">5 <span class="nhsuk-u-visually-hidden">Services</span></p>'partially compliant' accessibility statements 
+          </div>
+        </div>
+    
+      </li>
+      <li class="nhsuk-grid-column-one-quarter nhsuk-card-group__item">
+    
+        <div class="nhsuk-card nhsuk-card--clickable">
+          <div class="nhsuk-card__content">
+            <p class="nhsuk-heading-xl nhsuk-u-font-size-64 nhsuk-u-margin-bottom-1">2 <span class="nhsuk-u-visually-hidden">Messages</span></p>services WCAG Tested
+          </div>
+        </div>
+    
+      </li>
+    </ul>
+<hr>
       <table role="table" class="nhsuk-table-responsive">
-        <!--<caption class="nhsuk-table__caption">Ibuprofen tablet dosages for children</caption>-->
+        <caption class="nhsuk-table__caption">Compliance table</caption>
         <thead role="rowgroup" class="nhsuk-table__head">
           <tr role="row">
             <th role="columnheader" class="" scope="col" style="padding-right: 150px;">
