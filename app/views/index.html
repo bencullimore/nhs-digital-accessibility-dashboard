@@ -1,0 +1,506 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        NHS Digital Accessibility Dashboard
+        <!--<span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>-->
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+
+
+      
+
+      <table role="table" class="nhsuk-table-responsive">
+        <!--<caption class="nhsuk-table__caption">Ibuprofen tablet dosages for children</caption>-->
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col" style="padding-right: 150px;">
+              <p class="nhsuk-body-s">Name</p>
+            </th>
+            <th role="columnheader" class="" scope="col">
+              <p class="nhsuk-body-s">WCAG 2.1<br> AA standard</p>
+            </th>
+            <th role="columnheader" class="" scope="col">
+              <p class="nhsuk-body-s">Accessibility<br> statement</p>
+            </th>
+            <th role="columnheader" class="" scope="col">
+                <p class="nhsuk-body-s">Accessibility<br> status</p>
+              </th>
+            <th role="columnheader" class="" scope="col">
+              <p class="nhsuk-body-s">UR includes<br> access needs</p> 
+            </th>
+
+            <th role="columnheader" class="" scope="col">
+              <p class="nhsuk-body-s">WCAG<br> tested</p> 
+            </th>
+
+            <th role="columnheader" class="" scope="col">
+              <p class="nhsuk-body-s">Tested with<br> assistive technology</p> 
+            </th>
+
+            <th role="columnheader" class="" scope="col">
+              <p class="nhsuk-body-s">NHS service<br> standard</p> 
+            </th>
+
+          </tr>
+        </thead>
+
+    
+        <tbody class="nhsuk-table__body">
+
+            
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell" >
+              <span class="nhsuk-table-responsive__heading">Name </span>
+              <a href="https://www.nhs.uk"><h2 class="nhsuk-heading-m">The NHS website</h2></a>
+              
+
+
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">WCAG 2.1 AA standard </span><strong class="nhsuk-tag nhsuk-tag--red">
+                
+Not compliant
+              </strong>
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+                <p class="nhsuk-body-s "><a href="https://www.nhs.uk/accessibility-statement/">NHS website statement</a></p>
+
+            </td>
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Status</span><strong class="nhsuk-tag nhsuk-tag--orange">
+              Partially compliant
+            </strong> <br> <p class="nhsuk-body-s nhsuk-u-padding-top-2">'Next review due: 21 September 2023'
+              </p>
+
+          </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">UR includes access needs </span><strong class="nhsuk-tag nhsuk-tag--orange">
+                Some 
+
+              </strong>
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">WCAG tested</span><strong class="nhsuk-tag nhsuk-tag--green">
+                Expert evaluation
+
+
+              </strong>
+            </td>
+
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">Tested with
+                  assistive technology</span><strong class="nhsuk-tag nhsuk-tag--green">
+                Tested 
+
+
+              </strong>
+            </td>
+
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">WCAG tested</span><strong class="nhsuk-tag nhsuk-tag--red">
+                Not met
+
+              </strong>
+            </td>
+
+
+
+          </tr>
+
+
+          <tr role="row" class="nhsuk-table__row">
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Name </span>
+                <a href="https://access.login.nhs.uk"><h2 class="nhsuk-heading-m">NHS Login</h2></a>
+              
+  
+  
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">WCAG 2.1 AA standard </span><strong class="nhsuk-tag nhsuk-tag--red">
+                  Not compliant
+                </strong>
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">Accessibility statement </span><p class="nhsuk-body-s "><a href="https://access.login.nhs.uk/enter-email">NHS Login statement</a></p>
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">
+                      Compliance level not provided
+                    </strong>
+                </td>
+
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">UR includes access needs </span> <p class="nhsuk-body-s ">Unknown</p>
+              </td>
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+              </td>
+  
+              <td role="cell" class="nhsuk-table__cell">
+                <span class="nhsuk-table-responsive__heading">WCAG tested</span><strong class="nhsuk-tag nhsuk-tag--red">
+                  Not met
+  
+                </strong>
+              </td>
+  
+  
+  
+            </tr>          
+
+
+            <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Name </span>
+                  <a href="https://www.nhs.uk/using-the-nhs/nhs-services/the-nhs-app/"><h2 class="nhsuk-heading-m">NHS App</h2></a>
+                  <p class="nhsuk-body-s ">  
+                  <ul class="nhsuk-body-s ">
+                      <li >Online</li>
+                      <li>iOS</li>
+                      <li>Android</li>
+                    </ul>
+                  </p>
+                  
+    
+    
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">WCAG 2.1 AA standard </span><strong class="nhsuk-tag nhsuk-tag--red">
+                    Not compliant
+                  </strong>
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">Accessibility statement </span>
+                  <p class="nhsuk-body-s "><a href="https://www.nhs.uk/using-the-nhs/nhs-services/the-nhs-app/accessibility/">NHS App statement</a></p>
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--orange">
+                        Partially compliant
+                      </strong><br> <p class="nhsuk-body-s nhsuk-u-padding-top-2">Missing some legally required text - compliance status
+    
+                        </p>
+                  </td>
+
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">UR includes access needs </span> <p class="nhsuk-body-s ">Unknown</p>
+                </td>
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">WCAG tested</span><strong class="nhsuk-tag nhsuk-tag--green">
+                    Expert evaluation
+    
+    
+                  </strong>
+                </td>
+    
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                </td>
+    
+                <td role="cell" class="nhsuk-table__cell">
+                  <span class="nhsuk-table-responsive__heading">WCAG tested</span><strong class="nhsuk-tag nhsuk-tag--red">
+                    Not met
+    
+                  </strong>
+                </td>
+    
+    
+    
+              </tr>   
+
+
+
+
+              <tr role="row" class="nhsuk-table__row">
+                  <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading">Name </span>
+                    <a href="https://maps.test-and-trace.nhs.uk"><h2 class="nhsuk-heading-m">Find where to get rapid lateral flow tests for coronavirus (COVID-19)
+                      </h2></a>
+
+                    
+      
+      
+                  </td>
+                  <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading">WCAG 2.1 AA standard </span><strong class="nhsuk-tag nhsuk-tag--red">
+                      Not compliant
+                    </strong>
+                  </td>
+                  <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading">Accessibility statement </span>
+                    <p class="nhsuk-body-s "><a href="https://www.nhs.uk/accessibility-statement/">NHS website statement</a></p>  <p class="nhsuk-body-s nhsuk-u-padding-top-2">No specific statement</p>
+                  </td>
+                  <td role="cell" class="nhsuk-table__cell">
+                      <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">
+                          No statement
+                        </strong>
+                    </td>
+                  <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading">UR includes access needs </span> <p class="nhsuk-body-s ">Unknown</p>
+                  </td>
+                  <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                  </td>
+      
+                  <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                  </td>
+      
+                  <td role="cell" class="nhsuk-table__cell">
+                    <span class="nhsuk-table-responsive__heading">WCAG tested</span><strong class="nhsuk-tag nhsuk-tag--red">
+                      Not met
+      
+                    </strong>
+                  </td>
+      
+      
+      
+                </tr>    
+
+
+                <tr role="row" class="nhsuk-table__row">
+                    <td role="cell" class="nhsuk-table__cell">
+                      <span class="nhsuk-table-responsive__heading">Name </span>
+                      <a href="https://www.nhs.uk/using-the-nhs/nhs-services/pharmacies/order-repeat-prescriptions-online/do-you-have-nhs-login"><h2 class="nhsuk-heading-m">Order a repeat prescription
+
+                        </h2></a>
+  
+                      
+        
+        
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell">
+                      <span class="nhsuk-table-responsive__heading">WCAG 2.1 AA standard </span><strong class="nhsuk-tag nhsuk-tag--red">
+                        Not compliant
+                      </strong>
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell">
+                      <span class="nhsuk-table-responsive__heading">Accessibility statement </span>
+                      <p class="nhsuk-body-s "><a href="https://www.nhs.uk/using-the-nhs/nhs-services/pharmacies/order-repeat-prescriptions-online/accessibility/">Order a repeat prescription statement
+                      </a></p>
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell">
+                        <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--orange">
+                           Partially compliant
+                          </strong>
+                      </td>
+
+                    <td role="cell" class="nhsuk-table__cell">
+                      <span class="nhsuk-table-responsive__heading">UR includes access needs </span> <p class="nhsuk-body-s ">Unknown</p>
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell">
+                      <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                    </td>
+        
+                    <td role="cell" class="nhsuk-table__cell">
+                      <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                    </td>
+        
+                    <td role="cell" class="nhsuk-table__cell">
+                      <span class="nhsuk-table-responsive__heading">WCAG tested</span><strong class="nhsuk-tag nhsuk-tag--red">
+                        Not met
+        
+                      </strong>
+                    </td>
+        
+        
+        
+                  </tr> 
+
+
+
+                  <tr role="row" class="nhsuk-table__row">
+                      <td role="cell" class="nhsuk-table__cell">
+                        <span class="nhsuk-table-responsive__heading">Name </span>
+                        <a href="https://service-manual.nhs.uk"><h2 class="nhsuk-heading-m">NHS Service Manual
+
+  
+                          </h2></a>
+    
+                        
+          
+          
+                      </td>
+                      <td role="cell" class="nhsuk-table__cell">
+                        <span class="nhsuk-table-responsive__heading">WCAG 2.1 AA standard </span><strong class="nhsuk-tag nhsuk-tag--red">
+                          Not compliant
+                        </strong>
+                      </td>
+                      <td role="cell" class="nhsuk-table__cell">
+                        <span class="nhsuk-table-responsive__heading">Accessibility statement </span>
+                        <p class="nhsuk-body-s "><a href="https://service-manual.nhs.uk/accessibility-statement">Service manual statement
+                        </a></p>
+                      </td>
+                      <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--orange">
+                             Partially compliant
+                            </strong>
+                        </td>
+  
+                      <td role="cell" class="nhsuk-table__cell">
+                        <span class="nhsuk-table-responsive__heading">UR includes access needs </span> <p class="nhsuk-body-s ">Unknown</p>
+                      </td>
+                      <td role="cell" class="nhsuk-table__cell">
+                        <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                      </td>
+          
+                      <td role="cell" class="nhsuk-table__cell">
+                        <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                      </td>
+          
+                      <td role="cell" class="nhsuk-table__cell">
+                        <span class="nhsuk-table-responsive__heading">WCAG tested</span><strong class="nhsuk-tag nhsuk-tag--green">
+                          Met
+          
+                        </strong>
+                      </td>
+          
+          
+          
+                    </tr> 
+
+                    <tr role="row" class="nhsuk-table__row">
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading">Name </span>
+                          <a href="https://www.nhs.uk/nhs-services/hospitals/book-an-appointment/"><h2 class="nhsuk-heading-m">Book an appointment using the NHS e-Referral Service
+
+  
+    
+                            </h2></a>
+      
+                         
+            
+            
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading">WCAG 2.1 AA standard </span><strong class="nhsuk-tag nhsuk-tag--red">
+                            Not compliant
+                          </strong>
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading">Accessibility statement </span><p class="nhsuk-body-s "> No statement</p>
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--orange">
+                               Partially compliant
+                              </strong>
+                          </td>
+    
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading">UR includes access needs </span> <p class="nhsuk-body-s ">Unknown</p>
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                        </td>
+            
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                        </td>
+            
+                        <td role="cell" class="nhsuk-table__cell">
+                          <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                        </td>
+            
+            
+            
+                      </tr> 
+
+
+
+                      <tr role="row" class="nhsuk-table__row">
+                          <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading">Name </span>
+                            <a href="https://your-data-matters.service.nhs.uk"><h2 class="nhsuk-heading-m">Choose if data from your health records is shared for research and planning
+
+  
+    
+      
+                              </h2></a>
+        
+                           
+              
+              
+                          </td>
+                          <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading">WCAG 2.1 AA standard </span><strong class="nhsuk-tag nhsuk-tag--red">
+                              Not compliant
+                            </strong>
+                          </td>
+                          <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading">Accessibility statement </span><p class="nhsuk-body-s "> <a href="https://your-data-matters.service.nhs.uk/accessibilitystatement">Your data matters statement
+
+                            </a></p>
+                          </td>
+                          <td role="cell" class="nhsuk-table__cell">
+                              <span class="nhsuk-table-responsive__heading">Status </span><strong class="nhsuk-tag nhsuk-tag--red">
+                                 Not compliant
+                                </strong>
+                            </td>
+      
+                          <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading">UR includes access needs </span> <p class="nhsuk-body-s ">Unknown</p>
+                          </td>
+                          <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                          </td>
+              
+                          <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                          </td>
+              
+                          <td role="cell" class="nhsuk-table__cell">
+                            <span class="nhsuk-table-responsive__heading">WCAG tested</span><p class="nhsuk-body-s ">Unknown</p>
+                          </td>
+              
+              
+              
+                        </tr> 
+         
+        </tbody>
+      </table>
+
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}
